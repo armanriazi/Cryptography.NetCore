@@ -6,23 +6,23 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NikCryptography
+namespace Cryptography
 {
-    sealed class NikCryptography
+    sealed class Cryptography
     {
         private static void Main()
         {
             string decryptionKey = "aVb&ePPPPWLGMQ2V";
             Console.Write("    Enter String: ");
             string testString = Console.ReadLine();
-            string encrypted = NikCryptographyLibrary.AES_Encrypt(testString, decryptionKey);
+            string encrypted = CryptographyLibrary.AES_Encrypt(testString, decryptionKey);
             Console.WriteLine("Encrypted String: " + encrypted);
-            string decrypted = NikCryptographyLibrary.AES_Decrypt(encrypted, decryptionKey);
+            string decrypted = CryptographyLibrary.AES_Decrypt(encrypted, decryptionKey);
             Console.WriteLine("Decrypted String: " + decrypted);
             Console.ReadLine();
         }
     }
-    public sealed class NikCryptographyLibrary
+    public sealed class CryptographyLibrary
     {
         public static string AES_Encrypt(string input, string pass)
         {
