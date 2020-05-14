@@ -6,11 +6,11 @@ using System.Security.Cryptography;
 using System.Text;
 using Microsoft.SqlServer.Server;
 
-namespace NikCryptographyMain
+namespace CryptographyMain
 {
     public sealed class Decryption
     {
-        public static string NikFuncDecryptionMain(string cipherTxt, string keyTxt)
+        public static string FuncDecryptionMain(string cipherTxt, string keyTxt)
         {
             string decrypted = "";
             string error = "";
