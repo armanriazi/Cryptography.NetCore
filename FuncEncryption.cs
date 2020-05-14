@@ -5,11 +5,11 @@ using System.Data.SqlTypes;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace NikCryptographyMain
+namespace CryptographyMain
 {
     public sealed class Encryption
     {
-        public static string NikFuncEncryptionMain(string plainTxt)//, out string encrypted, out string extractedIVTxt, out string error
+        public static string FuncEncryptionMain(string plainTxt)//, out string encrypted, out string extractedIVTxt, out string error
         {
             string encrypted = "";
             string extractedIVTxt = "";
